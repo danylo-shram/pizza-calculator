@@ -141,3 +141,13 @@ ul {
     max-width: 100px; 
     height: auto; 
 }
+
+.slider {
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+.slider img {
+    max-width: 90%; 
+    height: auto; 
+}

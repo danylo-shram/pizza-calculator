@@ -5,25 +5,42 @@
     <title>Власник</title>
     <link rel="icon" type="image/png" href="pizza.png">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 <body>
     <div class="header">
         <h1>Власник піццерії</h1>
         <p>Сайт створений: Шрамом Данилом</p>
         <img src="avt.jpg" alt="Аватарка власника" class="avatar">
-		
     </div>
     <div class="container">
         <p>Вітаємо на сторінці власника піццерії! Дивіться відео про наші смачні піци та перегляньте фотографії галереї.</p>
-	    <a href="index.html">Повернутися на головну сторінку</a>
         <div class="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/S6TZh8wYrsM?si=fEBrbuZkZ_MQd_YZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="gallery">
-            <img src="pizza1.jpg" alt="Піцца 1">
-            <img src="pizza2.jpg" alt="Піцца 2">
-            <img src="pizza3.jpg" alt="Піцца 3">
+            <div class="slider">
+                <div><img src="pizza1.jpg" alt="Піцца 1"></div>
+                <div><img src="pizza2.jpg" alt="Піцца 2"></div>
+                <div><img src="pizza3.jpg" alt="Піцца 3"></div>
+            </div>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.1186794677988!2d24.028741011713795!3d49.84022753099481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6da031c2f9%3A0xb821b95c31643b9c!2zRGVNYW5kamFybyB8INCU0LXQnNCw0L3QtNC20LDRgNC-!5e0!3m2!1suk!2sua!4v1697735628571!5m2!1suk!2sua" width="600" height="450" style="border:0; margin: 0 auto; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+        });
+    </script>
 </body>
 </html>

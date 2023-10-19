@@ -36,6 +36,15 @@ h1 {
     align-items: center;
 }
 
+.slick-slide {
+    text-align: center;
+}
+
+.slick-slide img {
+    display: inline-block;
+    margin: 0 auto;
+}
+
 .about-button {
     background-color: #009245;
     color: #fff;
